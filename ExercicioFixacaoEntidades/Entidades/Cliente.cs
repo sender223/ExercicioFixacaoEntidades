@@ -15,5 +15,13 @@ namespace ExercicioFixacaoEntidades.Entidades {
             Email = email;
             Aniversario = aniversario;
         }
+
+        public override string ToString() {
+            return Nome
+                + ", ("
+                + Aniversario.ToString("dd/MM/yyyy")
+                + ") - "
+                + Email;
+        }
     }
 }

@@ -14,10 +14,10 @@ namespace ExercicioFixacaoEntidades.Entidades {
         public ItemPedido() {
         }
 
-        public ItemPedido(int quantidade,double preco, Produto produto) {
-            Quantidade = quantidade;
+        public ItemPedido(Produto produto, double preco, int quantidade) {
+            Produto = produto;            
             Preco = preco;
-            Produto = produto;
+            Quantidade = quantidade;
         }
 
         public double SubTotal() {
